@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PYTHON=python3
+PYTHON=$HOME/Python/bin/python3
 ret=`$PYTHON -c "import sys; print(int(sys.version_info[:2] >= (3, 4)))"`
 if [ $ret -ne 1 ]; then
     echo "Python 3.4+ required. Aborting."
